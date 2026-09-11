@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07131f" />
+<title>GTS App Icons — pick your favorite</title>
+<style>
+  :root {
+    --bg: #07131f; --card: #12263a; --ink: #f4efe4; --muted: #b7c0c9;
+    --gold: #e0b84a; --line: rgba(255,255,255,.08);
+    --safe: env(safe-area-inset-bottom, 12px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  body { padding-bottom: calc(92px + var(--safe)); }
+  header { position: sticky; top: 0; z-index: 20; background: linear-gradient(180deg, #07131f 72%, rgba(7,19,31,0)); padding: 16px 16px 8px; }
+  .kicker { color: var(--gold); letter-spacing: .14em; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  h1 { margin: 4px 0 6px; font-size: 24px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: 14px; line-height: 1.4; margin: 0 0 12px; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 600; }
+  .chip.on { background: var(--gold); color: #1a1406; border-color: var(--gold); }
+  .count { opacity: .7; font-weight: 500; }
+  main { padding: 4px 12px 24px; }
+  .set-head { margin: 18px 4px 8px; }
+  .set-head h2 { margin: 0; font-size: 18px; }
+  .set-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  .card { background: var(--card); border-radius: 22px; overflow: hidden; border: 1px solid var(--line); position: relative; }
+  .card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #0a1826; }
+  .meta { padding: 8px 10px 10px; }
+  .meta b { font-size: 12px; font-weight: 650; display: block; }
+  .id { font-size: 10px; color: var(--muted); }
+  .heart { width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(0,0,0,.4); color: #fff; font-size: 18px; position: absolute; top: 8px; right: 8px; }
+  .heart.yes { background: var(--gold); color: #1a1406; }
+  #lb { display: none; position: fixed; inset: 0; z-index: 50; background: rgba(4,10,16,.94); flex-direction: column; }
+  #lb.open { display: flex; }
+  .lb-top { display: flex; justify-content: space-between; padding: 12px 12px 0; }
+  .lb-top button { background: var(--card); color: var(--ink); border: 0; border-radius: 999px; padding: 8px 14px; font-weight: 650; }
+  .stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px 16px; }
+  .stage img { width: min(92vw, 560px); border-radius: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+  .homescreen { display: flex; justify-content: center; gap: 22px; padding: 4px 0 8px; color: var(--muted); font-size: 11px; text-align: center; }
+  .homescreen img { width: 62px; height: 62px; border-radius: 15px; display: block; margin: 0 auto 4px; }
+  .homescreen .sm { width: 42px; height: 42px; border-radius: 10px; }
+  .lb-cap { text-align: center; padding: 0 16px 10px; }
+  .lb-cap b { display: block; font-size: 16px; }
+  .lb-cap span { color: var(--muted); font-size: 12px; }
+  .lb-nav { display: flex; gap: 8px; padding: 0 16px 16px; }
+  .lb-nav button { flex: 1; padding: 14px; border-radius: 14px; border: 0; font-weight: 700; font-size: 15px; }
+  .prev, .next { background: var(--card); color: var(--ink); }
+  .favbtn { background: var(--gold); color: #1a1406; }
+  #dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: #0a1a2b; border-top: 1px solid var(--line); padding: 10px 14px calc(10px + var(--safe)); }
+  .dock-row { display: flex; align-items: center; gap: 10px; }
+  .picks { display: flex; gap: 6px; overflow-x: auto; flex: 1; min-height: 40px; }
+  .picks img { width: 40px; height: 40px; border-radius: 10px; }
+  #copy { flex: 0 0 auto; background: var(--gold); color: #1a1406; border: 0; border-radius: 999px; padding: 10px 14px; font-weight: 800; font-size: 13px; }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Grafton Towboat Services</div>
+  <h1>Customer app icons</h1>
+  <p class="sub">Tap any icon to see it large. Heart the ones you like. Then tap <b>Text picks</b> and send the list to Deepen.</p>
+  <div class="chips" id="chips"></div>
+</header>
+<main id="main"></main>
+<div id="lb">
+  <div class="lb-top">
+    <button type="button" id="close">Close</button>
+    <button type="button" id="lbHeart">♥ Save</button>
+  </div>
+  <div class="stage"><img id="lbImg" alt=""></div>
+  <div class="homescreen">
+    <div><img id="hs1" alt=""><div>Home screen</div></div>
+    <div><img id="hs2" class="sm" alt=""><div>Small</div></div>
+  </div>
+  <div class="lb-cap"><b id="lbTitle"></b><span id="lbSub"></span></div>
+  <div class="lb-nav">
+    <button class="prev" type="button" id="prev">← Prev</button>
+    <button class="favbtn" type="button" id="fav2">♥ Save</button>
+    <button class="next" type="button" id="next">Next →</button>
+  </div>
+</div>
+<div id="dock">
+  <div class="dock-row">
+    <div class="picks" id="picks"></div>
+    <button type="button" id="copy">Text picks</button>
+  </div>
+  <div class="hint" id="hint">No favorites yet — heart a few as you scroll.</div>
+</div>
+<script>
+function srcFull(id){ return "full/" + id + ".jpg"; }
+function srcThumb(id){ return "thumbs/" + id + ".jpg"; }
+fetch("items.json").then(r => r.json()).then(boot);
+function boot(DATA) {
+  const items = DATA.items;
+  let filter = "all";
+  let idx = 0;
+  const fav = new Set(JSON.parse(localStorage.getItem("gtsFavs") || "[]"));
+  const chips = document.getElementById("chips");
+  [{id:"all", title:"All"}, ...DATA.sets].forEach(s => {
+    const b = document.createElement("button");
+    b.className = "chip" + (s.id === "all" ? " on" : "");
+    const n = s.id === "all" ? items.length : items.filter(i => i.set === s.id).length;
+    b.innerHTML = s.title + ' <span class="count">' + n + "</span>";
+    b.onclick = () => { filter = s.id; [...chips.children].forEach(c => c.classList.remove("on")); b.classList.add("on"); render(); window.scrollTo(0,0); };
+    chips.appendChild(b);
+  });
+  function visible(){ return filter === "all" ? items : items.filter(i => i.set === filter); }
+  function render(){
+    const main = document.getElementById("main");
+    main.innerHTML = "";
+    const groups = filter === "all" ? DATA.sets : DATA.sets.filter(s => s.id === filter);
+    groups.forEach(s => {
+      const wrap = document.createElement("section");
+      wrap.innerHTML = `<div class="set-head"><h2>${s.title}</h2><p>${s.blurb || ""}</p></div>`;
+      const grid = document.createElement("div");
+      grid.className = "grid";
+      items.filter(i => i.set === s.id).forEach(it => grid.appendChild(card(it)));
+      wrap.appendChild(grid);
+      main.appendChild(wrap);
+    });
+    dock();
+  }
+  function card(it){
+    const el = document.createElement("article");
+    el.className = "card";
+    el.innerHTML = `<button class="heart ${fav.has(it.id) ? "yes" : ""}">♥</button>
+      <img alt="${it.label}" loading="lazy">
+      <div class="meta"><b>${it.label}</b><div class="id">${it.id}</div></div>`;
+    const img = el.querySelector("img");
+    img.src = srcFull(it.id);
+    img.onclick = () => open(items.findIndex(x => x.id === it.id));
+    el.querySelector(".heart").onclick = (e) => { e.stopPropagation(); toggle(it.id); e.currentTarget.classList.toggle("yes", fav.has(it.id)); dock(); };
+    return el;
+  }
+  function toggle(id){
+    if (fav.has(id)) fav.delete(id); else fav.add(id);
+    localStorage.setItem("gtsFavs", JSON.stringify([...fav]));
+  }
+  function dock(){
+    const picks = document.getElementById("picks");
+    picks.innerHTML = "";
+    [...fav].forEach(id => {
+      const img = document.createElement("img");
+      img.src = srcThumb(id);
+      img.onclick = () => open(items.findIndex(x => x.id === id));
+      picks.appendChild(img);
+    });
+    document.getElementById("hint").textContent = fav.size
+      ? fav.size + " saved. Tap Text picks and paste into a text to Deepen."
+      : "No favorites yet — heart a few as you scroll.";
+  }
+  function open(i){
+    idx = i;
+    const it = items[i];
+    const u = srcFull(it.id);
+    document.getElementById("lb").classList.add("open");
+    document.getElementById("lbImg").src = u;
+    document.getElementById("hs1").src = u;
+    document.getElementById("hs2").src = u;
+    document.getElementById("lbTitle").textContent = it.label;
+    document.getElementById("lbSub").textContent = it.setTitle + " · " + it.id;
+    document.getElementById("lbHeart").textContent = fav.has(it.id) ? "♥ Saved" : "♥ Save";
+    document.getElementById("fav2").textContent = fav.has(it.id) ? "♥ Saved" : "♥ Save";
+  }
+  document.getElementById("close").onclick = () => document.getElementById("lb").classList.remove("open");
+  document.getElementById("prev").onclick = () => {
+    const v = visible();
+    const cur = v.findIndex(x => x.id === items[idx].id);
+    open(items.findIndex(x => x.id === v[(cur - 1 + v.length) % v.length].id));
+  };
+  document.getElementById("next").onclick = () => {
+    const v = visible();
+    const cur = v.findIndex(x => x.id === items[idx].id);
+    open(items.findIndex(x => x.id === v[(cur + 1) % v.length].id));
+  };
+  ["lbHeart","fav2"].forEach(id => document.getElementById(id).onclick = () => { toggle(items[idx].id); open(idx); render(); });
+  let sx = 0;
+  document.getElementById("lb").addEventListener("touchstart", e => sx = e.changedTouches[0].screenX, {passive:true});
+  document.getElementById("lb").addEventListener("touchend", e => {
+    const dx = e.changedTouches[0].screenX - sx;
+    if (dx > 50) document.getElementById("prev").click();
+    if (dx < -50) document.getElementById("next").click();
+  }, {passive:true});
+  document.getElementById("copy").onclick = async () => {
+    const list = [...fav].map(id => {
+      const it = items.find(x => x.id === id);
+      return it ? (it.id + " — " + it.setTitle + " / " + it.label) : id;
+    }).join("\n");
+    const text = list ? ("GTS customer app icon picks:\n" + list + "\n\n(from the icon picker)") : "No icons hearted yet.";
+    try {
+      await navigator.clipboard.writeText(text);
+      document.getElementById("copy").textContent = "Copied";
+      setTimeout(() => document.getElementById("copy").textContent = "Text picks", 1400);
+    } catch { prompt("Copy these picks:", text); }
+  };
+  render();
+}
+</script>
+</body>
+</html>

@@ -1,1446 +1,163 @@
 {
   "sets": [
-    {
-      "id": "live",
-      "title": "Live now",
-      "blurb": "The three icons already wired \u2014 GTS staff, Sinclair shop, customer."
-    },
-    {
-      "id": "colorways",
-      "title": "Colorways",
-      "blurb": "The original 3D ship Jen liked \u2014 field color only."
-    },
-    {
-      "id": "skies",
-      "title": "Skies",
-      "blurb": "Same ship, real clouds and creative skies."
-    },
-    {
-      "id": "lighthouse",
-      "title": "Lighthouse",
-      "blurb": "Grafton lighthouse + flag tucked behind the ship."
-    },
-    {
-      "id": "grafton",
-      "title": "Grafton Accurate",
-      "blurb": "Short striped tower + tall separate flagpole."
-    },
-    {
-      "id": "squares",
-      "title": "Filled squares",
-      "blurb": "Badge on a filled square \u2014 better for iPhone homescreen corners."
-    },
-    {
-      "id": "earlier",
-      "title": "Earlier rounds",
-      "blurb": "Every other icon made along the way."
-    },
-    {
-      "id": "lockups",
-      "title": "Lockups",
-      "blurb": "Landscape / extra compositions, not square app icons."
-    }
+    { "id": "live", "title": "Live now", "blurb": "The three icons already wired — GTS staff, Sinclair shop, customer." },
+    { "id": "colorways", "title": "Colorways", "blurb": "The original 3D ship Jen liked — field color only." },
+    { "id": "skies", "title": "Skies", "blurb": "Same ship, real clouds and creative skies." },
+    { "id": "lighthouse", "title": "Lighthouse", "blurb": "Grafton lighthouse + flag tucked behind the ship." },
+    { "id": "squares", "title": "Filled squares", "blurb": "Badge on a filled square — better for iPhone homescreen corners." },
+    { "id": "earlier", "title": "Earlier rounds", "blurb": "Every other icon made along the way." }
   ],
   "items": [
-    {
-      "id": "live-01",
-      "set": "live",
-      "setTitle": "Live now",
-      "label": "GTS staff \u2014 green / gold ring",
-      "file": "admin-icon.png",
-      "n": 1
-    },
-    {
-      "id": "live-02",
-      "set": "live",
-      "setTitle": "Live now",
-      "label": "Sinclair shop \u2014 red / yellow ring",
-      "file": "shop-icon.png",
-      "n": 2
-    },
-    {
-      "id": "live-03",
-      "set": "live",
-      "setTitle": "Live now",
-      "label": "Customer \u2014 lime field",
-      "file": "customer-icon.png",
-      "n": 3
-    },
-    {
-      "id": "colorways-01",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Original Spruce",
-      "file": "01-original-spruce.png",
-      "n": 1
-    },
-    {
-      "id": "colorways-02",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Lime",
-      "file": "02-lime.png",
-      "n": 2
-    },
-    {
-      "id": "colorways-03",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Forest",
-      "file": "03-forest.png",
-      "n": 3
-    },
-    {
-      "id": "colorways-04",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Teal",
-      "file": "04-teal.png",
-      "n": 4
-    },
-    {
-      "id": "colorways-05",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Gold",
-      "file": "05-gold.png",
-      "n": 5
-    },
-    {
-      "id": "colorways-06",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Teal Gold Gradient",
-      "file": "06-teal-gold-gradient.png",
-      "n": 6
-    },
-    {
-      "id": "colorways-07",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Cream",
-      "file": "07-cream.png",
-      "n": 7
-    },
-    {
-      "id": "colorways-08",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Navy",
-      "file": "08-navy.png",
-      "n": 8
-    },
-    {
-      "id": "colorways-09",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Olive",
-      "file": "09-olive.png",
-      "n": 9
-    },
-    {
-      "id": "colorways-10",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Sage",
-      "file": "10-sage.png",
-      "n": 10
-    },
-    {
-      "id": "colorways-11",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "White",
-      "file": "11-white.png",
-      "n": 11
-    },
-    {
-      "id": "colorways-12",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Yellow",
-      "file": "12-yellow.png",
-      "n": 12
-    },
-    {
-      "id": "colorways-13",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Turquoise",
-      "file": "13-turquoise.png",
-      "n": 13
-    },
-    {
-      "id": "colorways-14",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Charcoal",
-      "file": "14-charcoal.png",
-      "n": 14
-    },
-    {
-      "id": "colorways-15",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Mint",
-      "file": "15-mint.png",
-      "n": 15
-    },
-    {
-      "id": "colorways-16",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Emerald",
-      "file": "16-emerald.png",
-      "n": 16
-    },
-    {
-      "id": "colorways-17",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Gold Sun Green",
-      "file": "17-gold-sun-green.png",
-      "n": 17
-    },
-    {
-      "id": "colorways-18",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Cream Sun Green",
-      "file": "18-cream-sun-green.png",
-      "n": 18
-    },
-    {
-      "id": "colorways-19",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Sky",
-      "file": "19-sky.png",
-      "n": 19
-    },
-    {
-      "id": "colorways-20",
-      "set": "colorways",
-      "setTitle": "Colorways",
-      "label": "Green Lime Gradient",
-      "file": "20-green-lime-gradient.png",
-      "n": 20
-    },
-    {
-      "id": "skies-01",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Spruce Blue Sky",
-      "file": "01-spruce-blue-sky.png",
-      "n": 1
-    },
-    {
-      "id": "skies-02",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Lime Golden Hour",
-      "file": "02-lime-golden-hour.png",
-      "n": 2
-    },
-    {
-      "id": "skies-03",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Forest Sunset",
-      "file": "03-forest-sunset.png",
-      "n": 3
-    },
-    {
-      "id": "skies-04",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Teal Tropic Sky",
-      "file": "04-teal-tropic-sky.png",
-      "n": 4
-    },
-    {
-      "id": "skies-05",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Gold Morning",
-      "file": "05-gold-morning.png",
-      "n": 5
-    },
-    {
-      "id": "skies-06",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Teal Gold Sunset",
-      "file": "06-teal-gold-sunset.png",
-      "n": 6
-    },
-    {
-      "id": "skies-07",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Cream Baby Blue",
-      "file": "07-cream-baby-blue.png",
-      "n": 7
-    },
-    {
-      "id": "skies-08",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Navy Twilight",
-      "file": "08-navy-twilight.png",
-      "n": 8
-    },
-    {
-      "id": "skies-09",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Olive Dusk",
-      "file": "09-olive-dusk.png",
-      "n": 9
-    },
-    {
-      "id": "skies-10",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Sage Dawn",
-      "file": "10-sage-dawn.png",
-      "n": 10
-    },
-    {
-      "id": "skies-11",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "White Daylight",
-      "file": "11-white-daylight.png",
-      "n": 11
-    },
-    {
-      "id": "skies-12",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Yellow Cobalt Sky",
-      "file": "12-yellow-cobalt-sky.png",
-      "n": 12
-    },
-    {
-      "id": "skies-13",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Turquoise Coral Sunset",
-      "file": "13-turquoise-coral-sunset.png",
-      "n": 13
-    },
-    {
-      "id": "skies-14",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Charcoal Midnight",
-      "file": "14-charcoal-midnight.png",
-      "n": 14
-    },
-    {
-      "id": "skies-15",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Mint Daylight",
-      "file": "15-mint-daylight.png",
-      "n": 15
-    },
-    {
-      "id": "skies-16",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Emerald Sun",
-      "file": "16-emerald-sun.png",
-      "n": 16
-    },
-    {
-      "id": "skies-17",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Spruce Gold Glow",
-      "file": "17-spruce-gold-glow.png",
-      "n": 17
-    },
-    {
-      "id": "skies-18",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Spruce Cream Dawn",
-      "file": "18-spruce-cream-dawn.png",
-      "n": 18
-    },
-    {
-      "id": "skies-19",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Sky Cumulus",
-      "file": "19-sky-cumulus.png",
-      "n": 19
-    },
-    {
-      "id": "skies-20",
-      "set": "skies",
-      "setTitle": "Skies",
-      "label": "Lime Gradient Sunset",
-      "file": "20-lime-gradient-sunset.png",
-      "n": 20
-    },
-    {
-      "id": "lighthouse-01",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Spruce Blue",
-      "file": "01-spruce-blue.png",
-      "n": 1
-    },
-    {
-      "id": "lighthouse-02",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Lime Golden",
-      "file": "02-lime-golden.png",
-      "n": 2
-    },
-    {
-      "id": "lighthouse-03",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Forest Sunset",
-      "file": "03-forest-sunset.png",
-      "n": 3
-    },
-    {
-      "id": "lighthouse-04",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Teal Tropic",
-      "file": "04-teal-tropic.png",
-      "n": 4
-    },
-    {
-      "id": "lighthouse-05",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Gold Sunburst",
-      "file": "05-gold-sunburst.png",
-      "n": 5
-    },
-    {
-      "id": "lighthouse-06",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Navy Twilight",
-      "file": "06-navy-twilight.png",
-      "n": 6
-    },
-    {
-      "id": "lighthouse-07",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Cream Quiet",
-      "file": "07-cream-quiet.png",
-      "n": 7
-    },
-    {
-      "id": "lighthouse-08",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Spruce Flag Fill",
-      "file": "08-spruce-flag-fill.png",
-      "n": 8
-    },
-    {
-      "id": "lighthouse-09",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "White Flag Backdrop",
-      "file": "09-white-flag-backdrop.png",
-      "n": 9
-    },
-    {
-      "id": "lighthouse-10",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Charcoal Beam",
-      "file": "10-charcoal-beam.png",
-      "n": 10
-    },
-    {
-      "id": "lighthouse-11",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Yellow Cobalt",
-      "file": "11-yellow-cobalt.png",
-      "n": 11
-    },
-    {
-      "id": "lighthouse-12",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Sage Dawn",
-      "file": "12-sage-dawn.png",
-      "n": 12
-    },
-    {
-      "id": "lighthouse-13",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Mint Day",
-      "file": "13-mint-day.png",
-      "n": 13
-    },
-    {
-      "id": "lighthouse-14",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Emerald Sunrise",
-      "file": "14-emerald-sunrise.png",
-      "n": 14
-    },
-    {
-      "id": "lighthouse-15",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Teal Gold",
-      "file": "15-teal-gold.png",
-      "n": 15
-    },
-    {
-      "id": "lighthouse-16",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Turquoise Coral",
-      "file": "16-turquoise-coral.png",
-      "n": 16
-    },
-    {
-      "id": "lighthouse-17",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Olive Dusk",
-      "file": "17-olive-dusk.png",
-      "n": 17
-    },
-    {
-      "id": "lighthouse-18",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Sky Cumulus",
-      "file": "18-sky-cumulus.png",
-      "n": 18
-    },
-    {
-      "id": "lighthouse-19",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Lime Gradient Sunset",
-      "file": "19-lime-gradient-sunset.png",
-      "n": 19
-    },
-    {
-      "id": "lighthouse-20",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Reflection Alt",
-      "file": "20-reflection-alt.png",
-      "n": 20
-    },
-    {
-      "id": "lighthouse-21",
-      "set": "lighthouse",
-      "setTitle": "Lighthouse",
-      "label": "Spruce Tight",
-      "file": "20-spruce-tight.png",
-      "n": 21
-    },
-    {
-      "id": "grafton-01",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Spruce Blue",
-      "file": "01-spruce-blue.png",
-      "n": 1
-    },
-    {
-      "id": "grafton-02",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Lime Golden",
-      "file": "02-lime-golden.png",
-      "n": 2
-    },
-    {
-      "id": "grafton-03",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Forest Sunset",
-      "file": "03-forest-sunset.png",
-      "n": 3
-    },
-    {
-      "id": "grafton-04",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Teal Tropic",
-      "file": "04-teal-tropic.png",
-      "n": 4
-    },
-    {
-      "id": "grafton-05",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Gold Sunburst",
-      "file": "05-gold-sunburst.png",
-      "n": 5
-    },
-    {
-      "id": "grafton-06",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Navy Twilight",
-      "file": "06-navy-twilight.png",
-      "n": 6
-    },
-    {
-      "id": "grafton-07",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Cream Quiet",
-      "file": "07-cream-quiet.png",
-      "n": 7
-    },
-    {
-      "id": "grafton-08",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Spruce Flag Fill",
-      "file": "08-spruce-flag-fill.png",
-      "n": 8
-    },
-    {
-      "id": "grafton-09",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "White Flag Backdrop",
-      "file": "09-white-flag-backdrop.png",
-      "n": 9
-    },
-    {
-      "id": "grafton-10",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Charcoal Beam",
-      "file": "10-charcoal-beam.png",
-      "n": 10
-    },
-    {
-      "id": "grafton-11",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Yellow Cobalt",
-      "file": "11-yellow-cobalt.png",
-      "n": 11
-    },
-    {
-      "id": "grafton-12",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Sage Dawn",
-      "file": "12-sage-dawn.png",
-      "n": 12
-    },
-    {
-      "id": "grafton-13",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Mint Day",
-      "file": "13-mint-day.png",
-      "n": 13
-    },
-    {
-      "id": "grafton-14",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Emerald Sunrise",
-      "file": "14-emerald-sunrise.png",
-      "n": 14
-    },
-    {
-      "id": "grafton-15",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Teal Gold",
-      "file": "15-teal-gold.png",
-      "n": 15
-    },
-    {
-      "id": "grafton-16",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Turquoise Coral",
-      "file": "16-turquoise-coral.png",
-      "n": 16
-    },
-    {
-      "id": "grafton-17",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Olive Dusk",
-      "file": "17-olive-dusk.png",
-      "n": 17
-    },
-    {
-      "id": "grafton-18",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Sky Cumulus",
-      "file": "18-sky-cumulus.png",
-      "n": 18
-    },
-    {
-      "id": "grafton-19",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Lime Gradient Sunset",
-      "file": "19-lime-gradient-sunset.png",
-      "n": 19
-    },
-    {
-      "id": "grafton-20",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Reflection Alt",
-      "file": "20-reflection-alt.png",
-      "n": 20
-    },
-    {
-      "id": "grafton-21",
-      "set": "grafton",
-      "setTitle": "Grafton Accurate",
-      "label": "Spruce Tight",
-      "file": "20-spruce-tight.png",
-      "n": 21
-    },
-    {
-      "id": "squares-01",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Lime",
-      "file": "gts-customer-lime.png",
-      "n": 1
-    },
-    {
-      "id": "squares-02",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Spruce",
-      "file": "gts-customer-spruce.png",
-      "n": 2
-    },
-    {
-      "id": "squares-03",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Sunset",
-      "file": "gts-customer-sunset.png",
-      "n": 3
-    },
-    {
-      "id": "squares-04",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Chartreuse",
-      "file": "gts-customer-chartreuse.png",
-      "n": 4
-    },
-    {
-      "id": "squares-05",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Cobalt",
-      "file": "gts-customer-cobalt.png",
-      "n": 5
-    },
-    {
-      "id": "squares-06",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Azure gold",
-      "file": "gts-customer-azuregold.png",
-      "n": 6
-    },
-    {
-      "id": "squares-07",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Azure gold filled",
-      "file": "gts-customer-azuregold-filled.png",
-      "n": 7
-    },
-    {
-      "id": "squares-08",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Teal gold",
-      "file": "gts-customer-tealgold.png",
-      "n": 8
-    },
-    {
-      "id": "squares-09",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Teal gold filled",
-      "file": "gts-customer-tealgold-filled.png",
-      "n": 9
-    },
-    {
-      "id": "squares-10",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Navy gold",
-      "file": "gts-customer-icon-navygold.png",
-      "n": 10
-    },
-    {
-      "id": "squares-11",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Navy gold B",
-      "file": "gts-customer-icon-navygold-b.png",
-      "n": 11
-    },
-    {
-      "id": "squares-12",
-      "set": "squares",
-      "setTitle": "Filled squares",
-      "label": "Customer icon",
-      "file": "gts-customer-icon.png",
-      "n": 12
-    },
-    {
-      "id": "earlier-01",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 01",
-      "file": "02e65c62-d2f2-404f-9aa1-9eaab071fa93.jpg",
-      "n": 1
-    },
-    {
-      "id": "earlier-02",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 02",
-      "file": "0f5cded9-a747-4596-83db-5979cf7a2efa.jpg",
-      "n": 2
-    },
-    {
-      "id": "earlier-03",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 03",
-      "file": "0fd93464-f972-45db-89a1-23bff1ebbf2b.jpg",
-      "n": 3
-    },
-    {
-      "id": "earlier-04",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 04",
-      "file": "108883b4-e449-4331-9526-f45de66955dc.jpg",
-      "n": 4
-    },
-    {
-      "id": "earlier-05",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 05",
-      "file": "14bf81b5-deab-4649-a7f7-85807c8d2e0a.jpg",
-      "n": 5
-    },
-    {
-      "id": "earlier-06",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 06",
-      "file": "153b8e1a-7d8f-40a6-81a1-18c65ce9b484.jpg",
-      "n": 6
-    },
-    {
-      "id": "earlier-07",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 07",
-      "file": "17962a25-ecbc-47e7-8b11-991b29f5365d.jpg",
-      "n": 7
-    },
-    {
-      "id": "earlier-08",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 08",
-      "file": "18c03beb-39cf-414c-97f2-f839e2f7c5fd.jpg",
-      "n": 8
-    },
-    {
-      "id": "earlier-09",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 09",
-      "file": "196bffdb-0fe4-4e36-aa43-4d69a7400a79.jpg",
-      "n": 9
-    },
-    {
-      "id": "earlier-10",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 10",
-      "file": "1fe73c9f-25af-4e86-a16a-69caf8f68764.jpg",
-      "n": 10
-    },
-    {
-      "id": "earlier-11",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 11",
-      "file": "2369f065-9655-4f6f-8085-040d9be11154.jpg",
-      "n": 11
-    },
-    {
-      "id": "earlier-12",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 12",
-      "file": "252081ed-599a-4f4d-a532-38cbe5ddd598.jpg",
-      "n": 12
-    },
-    {
-      "id": "earlier-13",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 13",
-      "file": "254738ac-e719-43a8-9fd1-4f67877f72c5.jpg",
-      "n": 13
-    },
-    {
-      "id": "earlier-14",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 14",
-      "file": "281606d0-447d-4a85-a82f-f0ae89fe9278.jpg",
-      "n": 14
-    },
-    {
-      "id": "earlier-15",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 15",
-      "file": "2d41fbe9-8c21-441c-9870-9bacf1c98d52.jpg",
-      "n": 15
-    },
-    {
-      "id": "earlier-16",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 16",
-      "file": "366de583-3a90-471f-a989-040a520c2ba6.jpg",
-      "n": 16
-    },
-    {
-      "id": "earlier-17",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 17",
-      "file": "370a3044-130b-4252-adf9-cfb18ef56f82.jpg",
-      "n": 17
-    },
-    {
-      "id": "earlier-18",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 18",
-      "file": "3c0f6cf6-c625-42b4-a9eb-ea03f13b22f4.jpg",
-      "n": 18
-    },
-    {
-      "id": "earlier-19",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 19",
-      "file": "3d7b88f7-e01b-4d22-a303-09789ea5b92f.jpg",
-      "n": 19
-    },
-    {
-      "id": "earlier-20",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 20",
-      "file": "3f67ea3a-c40c-4217-b4f2-a2734bd90d58.jpg",
-      "n": 20
-    },
-    {
-      "id": "earlier-21",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 21",
-      "file": "4a6e993a-90ad-40d3-b2bd-24d41b7f35a9.jpg",
-      "n": 21
-    },
-    {
-      "id": "earlier-22",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 22",
-      "file": "5310c1c9-f2fa-4b3b-93ff-1bd1345246ba.jpg",
-      "n": 22
-    },
-    {
-      "id": "earlier-23",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 23",
-      "file": "5dfc4ac6-c8a5-4b66-aa66-49a5a27fc0aa.jpg",
-      "n": 23
-    },
-    {
-      "id": "earlier-24",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 24",
-      "file": "5f2c8e9e-e7a4-466f-b7c1-96bfcd14df6a.jpg",
-      "n": 24
-    },
-    {
-      "id": "earlier-25",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 25",
-      "file": "60722f2d-9b56-4882-90eb-e4e9e735c70c.jpg",
-      "n": 25
-    },
-    {
-      "id": "earlier-26",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 26",
-      "file": "65008951-b69a-4ff0-9152-7ac4fa70e2d9.jpg",
-      "n": 26
-    },
-    {
-      "id": "earlier-27",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 27",
-      "file": "67195a2f-557a-44b5-b07e-484f8af3ca2a.jpg",
-      "n": 27
-    },
-    {
-      "id": "earlier-28",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 28",
-      "file": "6ab1dc8d-78b6-4755-85b3-9e1abc5f3821.jpg",
-      "n": 28
-    },
-    {
-      "id": "earlier-29",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 29",
-      "file": "6ae9f856-7fb1-4880-93fd-389c4ffe5f41.jpg",
-      "n": 29
-    },
-    {
-      "id": "earlier-30",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 30",
-      "file": "6dc148f1-232a-49d1-ab65-86c32ef84e11.jpg",
-      "n": 30
-    },
-    {
-      "id": "earlier-31",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 31",
-      "file": "74ee0eb1-c9fb-400d-a336-f800ef8c6a5e.jpg",
-      "n": 31
-    },
-    {
-      "id": "earlier-32",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 32",
-      "file": "75886320-55ce-4d2d-b8ef-36b4b07761ad.jpg",
-      "n": 32
-    },
-    {
-      "id": "earlier-33",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 33",
-      "file": "783cb5a3-bc7c-4d30-9a9a-8db1438cb16f.jpg",
-      "n": 33
-    },
-    {
-      "id": "earlier-34",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 34",
-      "file": "7c4e6ab8-86c7-452e-8c41-bd9661d27211.jpg",
-      "n": 34
-    },
-    {
-      "id": "earlier-35",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 35",
-      "file": "7dd7b088-3bc8-4c6e-98e2-24f21e8aec6a.jpg",
-      "n": 35
-    },
-    {
-      "id": "earlier-36",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 36",
-      "file": "819c7337-5ca6-48f8-ac68-2a7c5997ff09.jpg",
-      "n": 36
-    },
-    {
-      "id": "earlier-37",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 37",
-      "file": "82487fbe-cc43-4eba-99bf-1424cf51bd4d.jpg",
-      "n": 37
-    },
-    {
-      "id": "earlier-38",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 38",
-      "file": "845f7fab-880d-4119-b51a-5ab94340a56c.jpg",
-      "n": 38
-    },
-    {
-      "id": "earlier-39",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 39",
-      "file": "8674b3a4-778b-4c02-97fd-8ad829b5fa57.jpg",
-      "n": 39
-    },
-    {
-      "id": "earlier-40",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 40",
-      "file": "8762ac59-2a8e-4fed-92af-38d2a8812fed.jpg",
-      "n": 40
-    },
-    {
-      "id": "earlier-41",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 41",
-      "file": "8a4afd81-5da4-49a0-8884-f62551a50f75.jpg",
-      "n": 41
-    },
-    {
-      "id": "earlier-42",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 42",
-      "file": "8dc84dcb-ee29-49ee-8852-106238f99706.jpg",
-      "n": 42
-    },
-    {
-      "id": "earlier-43",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 43",
-      "file": "8f7dd3a0-bcd2-40a5-aa14-ba57e2c32d14.jpg",
-      "n": 43
-    },
-    {
-      "id": "earlier-44",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 44",
-      "file": "9201c80e-4171-4644-b06e-9e81369f1440.jpg",
-      "n": 44
-    },
-    {
-      "id": "earlier-45",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 45",
-      "file": "955f1b02-7736-4d8f-957a-ec4cc330367d.jpg",
-      "n": 45
-    },
-    {
-      "id": "earlier-46",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 46",
-      "file": "99f5ecd2-120b-48bc-86f1-17b5cc7acc62.jpg",
-      "n": 46
-    },
-    {
-      "id": "earlier-47",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 47",
-      "file": "9e17e915-68d8-4188-9257-1c6d5de1040b.jpg",
-      "n": 47
-    },
-    {
-      "id": "earlier-48",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 48",
-      "file": "a00a1de3-c07a-4ba2-a9eb-27ec6c72904b.jpg",
-      "n": 48
-    },
-    {
-      "id": "earlier-49",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 49",
-      "file": "a03c4899-a10c-497d-aeea-4c5bc4429e62.jpg",
-      "n": 49
-    },
-    {
-      "id": "earlier-50",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 50",
-      "file": "a8585a86-1a98-44d9-8440-9adfe6aaa4b8.jpg",
-      "n": 50
-    },
-    {
-      "id": "earlier-51",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 51",
-      "file": "ac50c4bd-d083-40f3-87a5-691403572cbd.jpg",
-      "n": 51
-    },
-    {
-      "id": "earlier-52",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 52",
-      "file": "ad82f745-4d46-46c9-8c6c-5dd0d2c97e41.jpg",
-      "n": 52
-    },
-    {
-      "id": "earlier-53",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 53",
-      "file": "b11c26be-9d53-4358-81b3-a79ce69a118d.jpg",
-      "n": 53
-    },
-    {
-      "id": "earlier-54",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 54",
-      "file": "b1f517c2-b7be-49de-b909-306a1afe1924.jpg",
-      "n": 54
-    },
-    {
-      "id": "earlier-55",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 55",
-      "file": "b30810f5-3b58-4288-a521-7f0e95c107c3.jpg",
-      "n": 55
-    },
-    {
-      "id": "earlier-56",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 56",
-      "file": "b7b53b21-5c77-4130-979f-1bc6baf3f69b.jpg",
-      "n": 56
-    },
-    {
-      "id": "earlier-57",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 57",
-      "file": "bbf35356-52b9-4e17-b65f-7e4381e133c0.jpg",
-      "n": 57
-    },
-    {
-      "id": "earlier-58",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 58",
-      "file": "bc647098-0153-4e5a-82b0-e65ba9d6a54d.jpg",
-      "n": 58
-    },
-    {
-      "id": "earlier-59",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 59",
-      "file": "be295399-b565-40af-891e-7a7d73161a5c.jpg",
-      "n": 59
-    },
-    {
-      "id": "earlier-60",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 60",
-      "file": "c2a9978d-f6ff-40b5-a5ff-0ac9aaeaf446.jpg",
-      "n": 60
-    },
-    {
-      "id": "earlier-61",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 61",
-      "file": "c3555021-3efd-4a8d-ac7a-e4af2c35d985.png",
-      "n": 61
-    },
-    {
-      "id": "earlier-62",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 62",
-      "file": "c4f35a16-1ca5-4832-9baa-c65698f0b6a8.jpg",
-      "n": 62
-    },
-    {
-      "id": "earlier-63",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 63",
-      "file": "c81227f9-e800-4bd1-b28e-89c697b919de.jpg",
-      "n": 63
-    },
-    {
-      "id": "earlier-64",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 64",
-      "file": "d266b0e8-19e8-4b84-a0c4-78fda72de9e0.jpg",
-      "n": 64
-    },
-    {
-      "id": "earlier-65",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 65",
-      "file": "d87e3d23-fe99-4934-bfc6-2517fd011fcd.jpg",
-      "n": 65
-    },
-    {
-      "id": "earlier-66",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 66",
-      "file": "d8a0fb37-32d9-43e9-b486-4dd065532445.jpg",
-      "n": 66
-    },
-    {
-      "id": "earlier-67",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 67",
-      "file": "ddb17eb1-0607-4ab8-ad9e-e3d7f5b9586d.jpg",
-      "n": 67
-    },
-    {
-      "id": "earlier-68",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 68",
-      "file": "ddda6abb-0975-4cbf-8e49-a7ec3494ec85.jpg",
-      "n": 68
-    },
-    {
-      "id": "earlier-69",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 69",
-      "file": "dee04264-dcde-4f2c-a7bc-18f1bad0b3fe.jpg",
-      "n": 69
-    },
-    {
-      "id": "earlier-70",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 70",
-      "file": "e243157b-2b1c-47ff-9225-a0b44805b609.jpg",
-      "n": 70
-    },
-    {
-      "id": "earlier-71",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 71",
-      "file": "e27c44d0-2c58-498e-b4ae-4b1549892b45.jpg",
-      "n": 71
-    },
-    {
-      "id": "earlier-72",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 72",
-      "file": "e31b20d9-dfd2-4aaf-a599-aee1c786e99b.jpg",
-      "n": 72
-    },
-    {
-      "id": "earlier-73",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 73",
-      "file": "f1fa8b08-a96e-4e12-9f57-e71b11316be6.jpg",
-      "n": 73
-    },
-    {
-      "id": "earlier-74",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 74",
-      "file": "fba8454b-2572-4491-b108-f6f11b3ded2d.jpg",
-      "n": 74
-    },
-    {
-      "id": "earlier-75",
-      "set": "earlier",
-      "setTitle": "Earlier rounds",
-      "label": "Earlier 75",
-      "file": "ffeb5421-bbe9-4d7e-9366-72c38dea0a12.jpg",
-      "n": 75
-    },
-    {
-      "id": "lockups-01",
-      "set": "lockups",
-      "setTitle": "Lockups",
-      "label": "Lockup 01",
-      "file": "3dd80e5b-be06-4bb7-a2bd-cdc90f5bdb2e.png",
-      "n": 1
-    },
-    {
-      "id": "lockups-02",
-      "set": "lockups",
-      "setTitle": "Lockups",
-      "label": "Lockup 02",
-      "file": "40a8e69a-dd27-4fc9-9e33-f703b4b08118.png",
-      "n": 2
-    },
-    {
-      "id": "lockups-03",
-      "set": "lockups",
-      "setTitle": "Lockups",
-      "label": "Lockup 03",
-      "file": "b3c45b05-bfe0-4ed0-a369-6fa71052062f.png",
-      "n": 3
-    }
+    { "id": "live-01", "set": "live", "setTitle": "Live now", "label": "GTS staff — green / gold ring", "file": "admin-icon.png", "n": 1 },
+    { "id": "live-02", "set": "live", "setTitle": "Live now", "label": "Sinclair shop — red / yellow ring", "file": "shop-icon.png", "n": 2 },
+    { "id": "live-03", "set": "live", "setTitle": "Live now", "label": "Customer — lime field", "file": "customer-icon.png", "n": 3 },
+    { "id": "colorways-01", "set": "colorways", "setTitle": "Colorways", "label": "Original Spruce", "file": "01-original-spruce.png", "n": 1 },
+    { "id": "colorways-02", "set": "colorways", "setTitle": "Colorways", "label": "Lime", "file": "02-lime.png", "n": 2 },
+    { "id": "colorways-03", "set": "colorways", "setTitle": "Colorways", "label": "Forest", "file": "03-forest.png", "n": 3 },
+    { "id": "colorways-04", "set": "colorways", "setTitle": "Colorways", "label": "Teal", "file": "04-teal.png", "n": 4 },
+    { "id": "colorways-05", "set": "colorways", "setTitle": "Colorways", "label": "Gold", "file": "05-gold.png", "n": 5 },
+    { "id": "colorways-06", "set": "colorways", "setTitle": "Colorways", "label": "Teal Gold Gradient", "file": "06-teal-gold-gradient.png", "n": 6 },
+    { "id": "colorways-07", "set": "colorways", "setTitle": "Colorways", "label": "Cream", "file": "07-cream.png", "n": 7 },
+    { "id": "colorways-08", "set": "colorways", "setTitle": "Colorways", "label": "Navy", "file": "08-navy.png", "n": 8 },
+    { "id": "colorways-09", "set": "colorways", "setTitle": "Colorways", "label": "Olive", "file": "09-olive.png", "n": 9 },
+    { "id": "colorways-10", "set": "colorways", "setTitle": "Colorways", "label": "Sage", "file": "10-sage.png", "n": 10 },
+    { "id": "colorways-11", "set": "colorways", "setTitle": "Colorways", "label": "White", "file": "11-white.png", "n": 11 },
+    { "id": "colorways-12", "set": "colorways", "setTitle": "Colorways", "label": "Yellow", "file": "12-yellow.png", "n": 12 },
+    { "id": "colorways-13", "set": "colorways", "setTitle": "Colorways", "label": "Turquoise", "file": "13-turquoise.png", "n": 13 },
+    { "id": "colorways-14", "set": "colorways", "setTitle": "Colorways", "label": "Charcoal", "file": "14-charcoal.png", "n": 14 },
+    { "id": "colorways-15", "set": "colorways", "setTitle": "Colorways", "label": "Mint", "file": "15-mint.png", "n": 15 },
+    { "id": "colorways-16", "set": "colorways", "setTitle": "Colorways", "label": "Emerald", "file": "16-emerald.png", "n": 16 },
+    { "id": "colorways-17", "set": "colorways", "setTitle": "Colorways", "label": "Gold Sun Green", "file": "17-gold-sun-green.png", "n": 17 },
+    { "id": "colorways-18", "set": "colorways", "setTitle": "Colorways", "label": "Cream Sun Green", "file": "18-cream-sun-green.png", "n": 18 },
+    { "id": "colorways-19", "set": "colorways", "setTitle": "Colorways", "label": "Sky", "file": "19-sky.png", "n": 19 },
+    { "id": "colorways-20", "set": "colorways", "setTitle": "Colorways", "label": "Green Lime Gradient", "file": "20-green-lime-gradient.png", "n": 20 },
+    { "id": "skies-01", "set": "skies", "setTitle": "Skies", "label": "Spruce Blue Sky", "file": "01-spruce-blue-sky.png", "n": 1 },
+    { "id": "skies-02", "set": "skies", "setTitle": "Skies", "label": "Lime Golden Hour", "file": "02-lime-golden-hour.png", "n": 2 },
+    { "id": "skies-03", "set": "skies", "setTitle": "Skies", "label": "Forest Sunset", "file": "03-forest-sunset.png", "n": 3 },
+    { "id": "skies-04", "set": "skies", "setTitle": "Skies", "label": "Teal Tropic Sky", "file": "04-teal-tropic-sky.png", "n": 4 },
+    { "id": "skies-05", "set": "skies", "setTitle": "Skies", "label": "Gold Morning", "file": "05-gold-morning.png", "n": 5 },
+    { "id": "skies-06", "set": "skies", "setTitle": "Skies", "label": "Teal Gold Sunset", "file": "06-teal-gold-sunset.png", "n": 6 },
+    { "id": "skies-07", "set": "skies", "setTitle": "Skies", "label": "Cream Baby Blue", "file": "07-cream-baby-blue.png", "n": 7 },
+    { "id": "skies-08", "set": "skies", "setTitle": "Skies", "label": "Navy Twilight", "file": "08-navy-twilight.png", "n": 8 },
+    { "id": "skies-09", "set": "skies", "setTitle": "Skies", "label": "Olive Dusk", "file": "09-olive-dusk.png", "n": 9 },
+    { "id": "skies-10", "set": "skies", "setTitle": "Skies", "label": "Sage Dawn", "file": "10-sage-dawn.png", "n": 10 },
+    { "id": "skies-11", "set": "skies", "setTitle": "Skies", "label": "White Daylight", "file": "11-white-daylight.png", "n": 11 },
+    { "id": "skies-12", "set": "skies", "setTitle": "Skies", "label": "Yellow Cobalt Sky", "file": "12-yellow-cobalt-sky.png", "n": 12 },
+    { "id": "skies-13", "set": "skies", "setTitle": "Skies", "label": "Turquoise Coral Sunset", "file": "13-turquoise-coral-sunset.png", "n": 13 },
+    { "id": "skies-14", "set": "skies", "setTitle": "Skies", "label": "Charcoal Midnight", "file": "14-charcoal-midnight.png", "n": 14 },
+    { "id": "skies-15", "set": "skies", "setTitle": "Skies", "label": "Mint Daylight", "file": "15-mint-daylight.png", "n": 15 },
+    { "id": "skies-16", "set": "skies", "setTitle": "Skies", "label": "Emerald Sun", "file": "16-emerald-sun.png", "n": 16 },
+    { "id": "skies-17", "set": "skies", "setTitle": "Skies", "label": "Spruce Gold Glow", "file": "17-spruce-gold-glow.png", "n": 17 },
+    { "id": "skies-18", "set": "skies", "setTitle": "Skies", "label": "Spruce Cream Dawn", "file": "18-spruce-cream-dawn.png", "n": 18 },
+    { "id": "skies-19", "set": "skies", "setTitle": "Skies", "label": "Sky Cumulus", "file": "19-sky-cumulus.png", "n": 19 },
+    { "id": "skies-20", "set": "skies", "setTitle": "Skies", "label": "Lime Gradient Sunset", "file": "20-lime-gradient-sunset.png", "n": 20 },
+    { "id": "lighthouse-01", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Spruce Blue", "file": "01-spruce-blue.png", "n": 1 },
+    { "id": "lighthouse-02", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Lime Golden", "file": "02-lime-golden.png", "n": 2 },
+    { "id": "lighthouse-03", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Forest Sunset", "file": "03-forest-sunset.png", "n": 3 },
+    { "id": "lighthouse-04", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Teal Tropic", "file": "04-teal-tropic.png", "n": 4 },
+    { "id": "lighthouse-05", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Gold Sunburst", "file": "05-gold-sunburst.png", "n": 5 },
+    { "id": "lighthouse-06", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Navy Twilight", "file": "06-navy-twilight.png", "n": 6 },
+    { "id": "lighthouse-07", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Cream Quiet", "file": "07-cream-quiet.png", "n": 7 },
+    { "id": "lighthouse-08", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Spruce Flag Fill", "file": "08-spruce-flag-fill.png", "n": 8 },
+    { "id": "lighthouse-09", "set": "lighthouse", "setTitle": "Lighthouse", "label": "White Flag Backdrop", "file": "09-white-flag-backdrop.png", "n": 9 },
+    { "id": "lighthouse-10", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Charcoal Beam", "file": "10-charcoal-beam.png", "n": 10 },
+    { "id": "lighthouse-11", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Yellow Cobalt", "file": "11-yellow-cobalt.png", "n": 11 },
+    { "id": "lighthouse-12", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Sage Dawn", "file": "12-sage-dawn.png", "n": 12 },
+    { "id": "lighthouse-13", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Mint Day", "file": "13-mint-day.png", "n": 13 },
+    { "id": "lighthouse-14", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Emerald Sunrise", "file": "14-emerald-sunrise.png", "n": 14 },
+    { "id": "lighthouse-15", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Teal Gold", "file": "15-teal-gold.png", "n": 15 },
+    { "id": "lighthouse-16", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Turquoise Coral", "file": "16-turquoise-coral.png", "n": 16 },
+    { "id": "lighthouse-17", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Olive Dusk", "file": "17-olive-dusk.png", "n": 17 },
+    { "id": "lighthouse-18", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Sky Cumulus", "file": "18-sky-cumulus.png", "n": 18 },
+    { "id": "lighthouse-19", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Lime Gradient Sunset", "file": "19-lime-gradient-sunset.png", "n": 19 },
+    { "id": "lighthouse-20", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Reflection Alt", "file": "20-reflection-alt.png", "n": 20 },
+    { "id": "lighthouse-21", "set": "lighthouse", "setTitle": "Lighthouse", "label": "Spruce Tight", "file": "20-spruce-tight.png", "n": 21 },
+    { "id": "squares-01", "set": "squares", "setTitle": "Filled squares", "label": "Lime", "file": "gts-customer-lime.png", "n": 1 },
+    { "id": "squares-02", "set": "squares", "setTitle": "Filled squares", "label": "Spruce", "file": "gts-customer-spruce.png", "n": 2 },
+    { "id": "squares-03", "set": "squares", "setTitle": "Filled squares", "label": "Sunset", "file": "gts-customer-sunset.png", "n": 3 },
+    { "id": "squares-04", "set": "squares", "setTitle": "Filled squares", "label": "Chartreuse", "file": "gts-customer-chartreuse.png", "n": 4 },
+    { "id": "squares-05", "set": "squares", "setTitle": "Filled squares", "label": "Cobalt", "file": "gts-customer-cobalt.png", "n": 5 },
+    { "id": "squares-06", "set": "squares", "setTitle": "Filled squares", "label": "Azure gold", "file": "gts-customer-azuregold.png", "n": 6 },
+    { "id": "squares-07", "set": "squares", "setTitle": "Filled squares", "label": "Azure gold filled", "file": "gts-customer-azuregold-filled.png", "n": 7 },
+    { "id": "squares-08", "set": "squares", "setTitle": "Filled squares", "label": "Teal gold", "file": "gts-customer-tealgold.png", "n": 8 },
+    { "id": "squares-09", "set": "squares", "setTitle": "Filled squares", "label": "Teal gold filled", "file": "gts-customer-tealgold-filled.png", "n": 9 },
+    { "id": "squares-10", "set": "squares", "setTitle": "Filled squares", "label": "Navy gold", "file": "gts-customer-icon-navygold.png", "n": 10 },
+    { "id": "squares-11", "set": "squares", "setTitle": "Filled squares", "label": "Navy gold B", "file": "gts-customer-icon-navygold-b.png", "n": 11 },
+    { "id": "squares-12", "set": "squares", "setTitle": "Filled squares", "label": "Customer icon", "file": "gts-customer-icon.png", "n": 12 },
+    { "id": "earlier-01", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 01", "file": "02e65c62-d2f2-404f-9aa1-9eaab071fa93.jpg", "n": 1 },
+    { "id": "earlier-02", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 02", "file": "0f5cded9-a747-4596-83db-5979cf7a2efa.jpg", "n": 2 },
+    { "id": "earlier-03", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 03", "file": "0fd93464-f972-45db-89a1-23bff1ebbf2b.jpg", "n": 3 },
+    { "id": "earlier-04", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 04", "file": "108883b4-e449-4331-9526-f45de66955dc.jpg", "n": 4 },
+    { "id": "earlier-05", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 05", "file": "14bf81b5-deab-4649-a7f7-85807c8d2e0a.jpg", "n": 5 },
+    { "id": "earlier-06", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 06", "file": "153b8e1a-7d8f-40a6-81a1-18c65ce9b484.jpg", "n": 6 },
+    { "id": "earlier-07", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 07", "file": "17962a25-ecbc-47e7-8b11-991b29f5365d.jpg", "n": 7 },
+    { "id": "earlier-08", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 08", "file": "18c03beb-39cf-414c-97f2-f839e2f7c5fd.jpg", "n": 8 },
+    { "id": "earlier-09", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 09", "file": "196bffdb-0fe4-4e36-aa43-4d69a7400a79.jpg", "n": 9 },
+    { "id": "earlier-10", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 10", "file": "1fe73c9f-25af-4e86-a16a-69caf8f68764.jpg", "n": 10 },
+    { "id": "earlier-11", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 11", "file": "2369f065-9655-4f6f-8085-040d9be11154.jpg", "n": 11 },
+    { "id": "earlier-12", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 12", "file": "252081ed-599a-4f4d-a532-38cbe5ddd598.jpg", "n": 12 },
+    { "id": "earlier-13", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 13", "file": "254738ac-e719-43a8-9fd1-4f67877f72c5.jpg", "n": 13 },
+    { "id": "earlier-14", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 14", "file": "281606d0-447d-4a85-a82f-f0ae89fe9278.jpg", "n": 14 },
+    { "id": "earlier-15", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 15", "file": "2d41fbe9-8c21-441c-9870-9bacf1c98d52.jpg", "n": 15 },
+    { "id": "earlier-16", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 16", "file": "366de583-3a90-471f-a989-040a520c2ba6.jpg", "n": 16 },
+    { "id": "earlier-17", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 17", "file": "370a3044-130b-4252-adf9-cfb18ef56f82.jpg", "n": 17 },
+    { "id": "earlier-18", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 18", "file": "3c0f6cf6-c625-42b4-a9eb-ea03f13b22f4.jpg", "n": 18 },
+    { "id": "earlier-19", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 19", "file": "3d7b88f7-e01b-4d22-a303-09789ea5b92f.jpg", "n": 19 },
+    { "id": "earlier-20", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 20", "file": "3f67ea3a-c40c-4217-b4f2-a2734bd90d58.jpg", "n": 20 },
+    { "id": "earlier-21", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 21", "file": "4a6e993a-90ad-40d3-b2bd-24d41b7f35a9.jpg", "n": 21 },
+    { "id": "earlier-22", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 22", "file": "5310c1c9-f2fa-4b3b-93ff-1bd1345246ba.jpg", "n": 22 },
+    { "id": "earlier-23", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 23", "file": "5dfc4ac6-c8a5-4b66-aa66-49a5a27fc0aa.jpg", "n": 23 },
+    { "id": "earlier-24", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 24", "file": "5f2c8e9e-e7a4-466f-b7c1-96bfcd14df6a.jpg", "n": 24 },
+    { "id": "earlier-25", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 25", "file": "60722f2d-9b56-4882-90eb-e4e9e735c70c.jpg", "n": 25 },
+    { "id": "earlier-26", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 26", "file": "65008951-b69a-4ff0-9152-7ac4fa70e2d9.jpg", "n": 26 },
+    { "id": "earlier-27", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 27", "file": "67195a2f-557a-44b5-b07e-484f8af3ca2a.jpg", "n": 27 },
+    { "id": "earlier-28", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 28", "file": "6ab1dc8d-78b6-4755-85b3-9e1abc5f3821.jpg", "n": 28 },
+    { "id": "earlier-29", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 29", "file": "6ae9f856-7fb1-4880-93fd-389c4ffe5f41.jpg", "n": 29 },
+    { "id": "earlier-30", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 30", "file": "6dc148f1-232a-49d1-ab65-86c32ef84e11.jpg", "n": 30 },
+    { "id": "earlier-31", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 31", "file": "74ee0eb1-c9fb-400d-a336-f800ef8c6a5e.jpg", "n": 31 },
+    { "id": "earlier-32", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 32", "file": "75886320-55ce-4d2d-b8ef-36b4b07761ad.jpg", "n": 32 },
+    { "id": "earlier-33", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 33", "file": "783cb5a3-bc7c-4d30-9a9a-8db1438cb16f.jpg", "n": 33 },
+    { "id": "earlier-34", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 34", "file": "7c4e6ab8-86c7-452e-8c41-bd9661d27211.jpg", "n": 34 },
+    { "id": "earlier-35", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 35", "file": "7dd7b088-3bc8-4c6e-98e2-24f21e8aec6a.jpg", "n": 35 },
+    { "id": "earlier-36", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 36", "file": "819c7337-5ca6-48f8-ac68-2a7c5997ff09.jpg", "n": 36 },
+    { "id": "earlier-37", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 37", "file": "82487fbe-cc43-4eba-99bf-1424cf51bd4d.jpg", "n": 37 },
+    { "id": "earlier-38", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 38", "file": "845f7fab-880d-4119-b51a-5ab94340a56c.jpg", "n": 38 },
+    { "id": "earlier-39", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 39", "file": "8674b3a4-778b-4c02-97fd-8ad829b5fa57.jpg", "n": 39 },
+    { "id": "earlier-40", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 40", "file": "8762ac59-2a8e-4fed-92af-38d2a8812fed.jpg", "n": 40 },
+    { "id": "earlier-41", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 41", "file": "8a4afd81-5da4-49a0-8884-f62551a50f75.jpg", "n": 41 },
+    { "id": "earlier-42", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 42", "file": "8dc84dcb-ee29-49ee-8852-106238f99706.jpg", "n": 42 },
+    { "id": "earlier-43", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 43", "file": "8f7dd3a0-bcd2-40a5-aa14-ba57e2c32d14.jpg", "n": 43 },
+    { "id": "earlier-44", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 44", "file": "9201c80e-4171-4644-b06e-9e81369f1440.jpg", "n": 44 },
+    { "id": "earlier-45", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 45", "file": "955f1b02-7736-4d8f-957a-ec4cc330367d.jpg", "n": 45 },
+    { "id": "earlier-46", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 46", "file": "99f5ecd2-120b-48bc-86f1-17b5cc7acc62.jpg", "n": 46 },
+    { "id": "earlier-47", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 47", "file": "9e17e915-68d8-4188-9257-1c6d5de1040b.jpg", "n": 47 },
+    { "id": "earlier-48", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 48", "file": "a00a1de3-c07a-4ba2-a9eb-27ec6c72904b.jpg", "n": 48 },
+    { "id": "earlier-49", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 49", "file": "a03c4899-a10c-497d-aeea-4c5bc4429e62.jpg", "n": 49 },
+    { "id": "earlier-50", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 50", "file": "a8585a86-1a98-44d9-8440-9adfe6aaa4b8.jpg", "n": 50 },
+    { "id": "earlier-51", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 51", "file": "ac50c4bd-d083-40f3-87a5-691403572cbd.jpg", "n": 51 },
+    { "id": "earlier-52", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 52", "file": "ad82f745-4d46-46c9-8c6c-5dd0d2c97e41.jpg", "n": 52 },
+    { "id": "earlier-53", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 53", "file": "b11c26be-9d53-4358-81b3-a79ce69a118d.jpg", "n": 53 },
+    { "id": "earlier-54", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 54", "file": "b1f517c2-b7be-49de-b909-306a1afe1924.jpg", "n": 54 },
+    { "id": "earlier-55", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 55", "file": "b30810f5-3b58-4288-a521-7f0e95c107c3.jpg", "n": 55 },
+    { "id": "earlier-56", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 56", "file": "b7b53b21-5c77-4130-979f-1bc6baf3f69b.jpg", "n": 56 },
+    { "id": "earlier-57", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 57", "file": "bbf35356-52b9-4e17-b65f-7e4381e133c0.jpg", "n": 57 },
+    { "id": "earlier-58", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 58", "file": "bc647098-0153-4e5a-82b0-e65ba9d6a54d.jpg", "n": 58 },
+    { "id": "earlier-59", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 59", "file": "be295399-b565-40af-891e-7a7d73161a5c.jpg", "n": 59 },
+    { "id": "earlier-60", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 60", "file": "c2a9978d-f6ff-40b5-a5ff-0ac9aaeaf446.jpg", "n": 60 },
+    { "id": "earlier-61", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 61", "file": "c3555021-3efd-4a8d-ac7a-e4af2c35d985.png", "n": 61 },
+    { "id": "earlier-62", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 62", "file": "c4f35a16-1ca5-4832-9baa-c65698f0b6a8.jpg", "n": 62 },
+    { "id": "earlier-63", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 63", "file": "c81227f9-e800-4bd1-b28e-89c697b919de.jpg", "n": 63 },
+    { "id": "earlier-64", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 64", "file": "d266b0e8-19e8-4b84-a0c4-78fda72de9e0.jpg", "n": 64 },
+    { "id": "earlier-65", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 65", "file": "d87e3d23-fe99-4934-bfc6-2517fd011fcd.jpg", "n": 65 },
+    { "id": "earlier-66", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 66", "file": "d8a0fb37-32d9-43e9-b486-4dd065532445.jpg", "n": 66 },
+    { "id": "earlier-67", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 67", "file": "ddb17eb1-0607-4ab8-ad9e-e3d7f5b9586d.jpg", "n": 67 },
+    { "id": "earlier-68", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 68", "file": "ddda6abb-0975-4cbf-8e49-a7ec3494ec85.jpg", "n": 68 },
+    { "id": "earlier-69", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 69", "file": "dee04264-dcde-4f2c-a7bc-18f1bad0b3fe.jpg", "n": 69 },
+    { "id": "earlier-70", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 70", "file": "e243157b-2b1c-47ff-9225-a0b44805b609.jpg", "n": 70 },
+    { "id": "earlier-71", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 71", "file": "e27c44d0-2c58-498e-b4ae-4b1549892b45.jpg", "n": 71 },
+    { "id": "earlier-72", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 72", "file": "e31b20d9-dfd2-4aaf-a599-aee1c786e99b.jpg", "n": 72 },
+    { "id": "earlier-73", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 73", "file": "f1fa8b08-a96e-4e12-9f57-e71b11316be6.jpg", "n": 73 },
+    { "id": "earlier-74", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 74", "file": "fba8454b-2572-4491-b108-f6f11b3ded2d.jpg", "n": 74 },
+    { "id": "earlier-75", "set": "earlier", "setTitle": "Earlier rounds", "label": "Earlier 75", "file": "ffeb5421-bbe9-4d7e-9366-72c38dea0a12.jpg", "n": 75 }
   ]
 }

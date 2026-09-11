@@ -18,11 +18,14 @@
   .kicker { color: var(--gold); letter-spacing: .14em; font-size: 11px; font-weight: 700; text-transform: uppercase; }
   h1 { margin: 4px 0 6px; font-size: 24px; letter-spacing: -.02em; }
   .sub { color: var(--muted); font-size: 14px; line-height: 1.4; margin: 0 0 12px; }
-  .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
   .chips::-webkit-scrollbar { display: none; }
   .chip { flex: 0 0 auto; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 600; }
   .chip.on { background: var(--gold); color: #1a1406; border-color: var(--gold); }
+  .chip.family.on { background: #7eb8ff; color: #07131f; border-color: #7eb8ff; }
   .count { opacity: .7; font-weight: 500; }
+  .fam-label { font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; font-weight: 700; margin: 4px 0 6px; }
+  .empty { margin: 40px 12px; text-align: center; color: var(--muted); font-size: 14px; line-height: 1.5; }
   main { padding: 4px 12px 24px; }
   .set-head { margin: 18px 4px 8px; }
   .set-head h2 { margin: 0; font-size: 18px; }
@@ -65,6 +68,9 @@
   <div class="kicker">Grafton Towboat Services</div>
   <h1>Customer app icons</h1>
   <p class="sub">Tap any icon to see it large. Heart the ones you like. Then tap <b>Text picks</b> and send the list to Deepen.</p>
+  <div class="fam-label">Boat family</div>
+  <div class="chips" id="familyChips"></div>
+  <div class="fam-label">Sets</div>
   <div class="chips" id="chips"></div>
 </header>
 <main id="main"></main>
@@ -97,24 +103,82 @@ function srcFull(id){ return "full/" + id + ".jpg"; }
 function srcThumb(id){ return "thumbs/" + id + ".jpg"; }
 fetch("items.json").then(r => r.json()).then(boot);
 function boot(DATA) {
-  const items = DATA.items;
+  const allItems = DATA.items.map(it => ({
+    ...it,
+    family: it.family || (String(it.id).startsWith("tb-") ? "towboat" : "cargoship")
+  }));
+  let family = "all";
   let filter = "all";
   let idx = 0;
   const fav = new Set(JSON.parse(localStorage.getItem("gtsFavs") || "[]"));
+  const familyChips = document.getElementById("familyChips");
   const chips = document.getElementById("chips");
-  [{id:"all", title:"All"}, ...DATA.sets].forEach(s => {
+
+  function pool(){
+    return family === "all" ? allItems : allItems.filter(i => i.family === family);
+  }
+  function setsForPool(){
+    const ids = new Set(pool().map(i => i.set));
+    return DATA.sets.filter(s => ids.has(s.id));
+  }
+  function rebuildSetChips(){
+    chips.innerHTML = "";
+    const items = pool();
+    const setList = [{id:"all", title:"All"}, ...setsForPool()];
+    setList.forEach(s => {
+      const b = document.createElement("button");
+      b.className = "chip" + (s.id === filter ? " on" : "");
+      const n = s.id === "all" ? items.length : items.filter(i => i.set === s.id).length;
+      b.innerHTML = s.title + ' <span class="count">' + n + "</span>";
+      b.onclick = () => {
+        filter = s.id;
+        [...chips.children].forEach(c => c.classList.remove("on"));
+        b.classList.add("on");
+        render();
+        window.scrollTo(0,0);
+      };
+      chips.appendChild(b);
+    });
+    if (!setList.some(s => s.id === filter)) filter = "all";
+  }
+
+  [
+    {id:"all", title:"All boats"},
+    {id:"cargoship", title:"Cargoship"},
+    {id:"towboat", title:"Towboat"}
+  ].forEach(s => {
     const b = document.createElement("button");
-    b.className = "chip" + (s.id === "all" ? " on" : "");
-    const n = s.id === "all" ? items.length : items.filter(i => i.set === s.id).length;
+    const n = s.id === "all" ? allItems.length : allItems.filter(i => i.family === s.id).length;
+    b.className = "chip family" + (s.id === "all" ? " on" : "");
     b.innerHTML = s.title + ' <span class="count">' + n + "</span>";
-    b.onclick = () => { filter = s.id; [...chips.children].forEach(c => c.classList.remove("on")); b.classList.add("on"); render(); window.scrollTo(0,0); };
-    chips.appendChild(b);
+    b.onclick = () => {
+      family = s.id;
+      filter = "all";
+      [...familyChips.children].forEach(c => c.classList.remove("on"));
+      b.classList.add("on");
+      rebuildSetChips();
+      render();
+      window.scrollTo(0,0);
+    };
+    familyChips.appendChild(b);
   });
-  function visible(){ return filter === "all" ? items : items.filter(i => i.set === filter); }
+
+  rebuildSetChips();
+
+  function visible(){
+    const items = pool();
+    return filter === "all" ? items : items.filter(i => i.set === filter);
+  }
   function render(){
     const main = document.getElementById("main");
     main.innerHTML = "";
-    const groups = filter === "all" ? DATA.sets : DATA.sets.filter(s => s.id === filter);
+    const items = pool();
+    if (!items.length) {
+      main.innerHTML = '<div class="empty">No towboat icons in the picker yet.<br>Generate with the badge prompts, drop files into <b>full/</b> + <b>thumbs/</b>, and add them to items.json with <b>"family": "towboat"</b>.</div>';
+      dock();
+      return;
+    }
+    const groups = filter === "all" ? setsForPool() : setsForPool().filter(s => s.id === filter);
     groups.forEach(s => {
       const wrap = document.createElement("section");
       wrap.innerHTML = `<div class="set-head"><h2>${s.title}</h2><p>${s.blurb || ""}</p></div>`;
@@ -131,10 +195,10 @@ function boot(DATA) {
     el.className = "card";
     el.innerHTML = `<button class="heart ${fav.has(it.id) ? "yes" : ""}">♥</button>
       <img alt="${it.label}" loading="lazy">
-      <div class="meta"><b>${it.label}</b><div class="id">${it.id}</div></div>`;
+      <div class="meta"><b>${it.label}</b><div class="id">${it.id} · ${it.family}</div></div>`;
     const img = el.querySelector("img");
     img.src = srcFull(it.id);
-    img.onclick = () => open(items.findIndex(x => x.id === it.id));
+    img.onclick = () => open(allItems.findIndex(x => x.id === it.id));
     el.querySelector(".heart").onclick = (e) => { e.stopPropagation(); toggle(it.id); e.currentTarget.classList.toggle("yes", fav.has(it.id)); dock(); };
     return el;
   }
@@ -148,7 +212,7 @@ function boot(DATA) {
     [...fav].forEach(id => {
       const img = document.createElement("img");
       img.src = srcThumb(id);
-      img.onclick = () => open(items.findIndex(x => x.id === id));
+      img.onclick = () => open(allItems.findIndex(x => x.id === id));
       picks.appendChild(img);
     });
     document.getElementById("hint").textContent = fav.size
@@ -156,30 +220,33 @@ function boot(DATA) {
       : "No favorites yet — heart a few as you scroll.";
   }
   function open(i){
+    if (i < 0) return;
     idx = i;
-    const it = items[i];
+    const it = allItems[i];
     const u = srcFull(it.id);
     document.getElementById("lb").classList.add("open");
     document.getElementById("lbImg").src = u;
     document.getElementById("hs1").src = u;
     document.getElementById("hs2").src = u;
     document.getElementById("lbTitle").textContent = it.label;
-    document.getElementById("lbSub").textContent = it.setTitle + " · " + it.id;
+    document.getElementById("lbSub").textContent = it.setTitle + " · " + it.id + " · " + it.family;
     document.getElementById("lbHeart").textContent = fav.has(it.id) ? "♥ Saved" : "♥ Save";
     document.getElementById("fav2").textContent = fav.has(it.id) ? "♥ Saved" : "♥ Save";
   }
   document.getElementById("close").onclick = () => document.getElementById("lb").classList.remove("open");
   document.getElementById("prev").onclick = () => {
     const v = visible();
-    const cur = v.findIndex(x => x.id === items[idx].id);
-    open(items.findIndex(x => x.id === v[(cur - 1 + v.length) % v.length].id));
+    if (!v.length) return;
+    const cur = v.findIndex(x => x.id === allItems[idx].id);
+    open(allItems.findIndex(x => x.id === v[(cur - 1 + v.length) % v.length].id));
   };
   document.getElementById("next").onclick = () => {
     const v = visible();
-    const cur = v.findIndex(x => x.id === items[idx].id);
-    open(items.findIndex(x => x.id === v[(cur + 1) % v.length].id));
+    if (!v.length) return;
+    const cur = v.findIndex(x => x.id === allItems[idx].id);
+    open(allItems.findIndex(x => x.id === v[(cur + 1) % v.length].id));
   };
-  ["lbHeart","fav2"].forEach(id => document.getElementById(id).onclick = () => { toggle(items[idx].id); open(idx); render(); });
+  ["lbHeart","fav2"].forEach(id => document.getElementById(id).onclick = () => { toggle(allItems[idx].id); open(idx); render(); });
   let sx = 0;
   document.getElementById("lb").addEventListener("touchstart", e => sx = e.changedTouches[0].screenX, {passive:true});
   document.getElementById("lb").addEventListener("touchend", e => {
@@ -189,8 +256,8 @@ function boot(DATA) {
   }, {passive:true});
   document.getElementById("copy").onclick = async () => {
     const list = [...fav].map(id => {
-      const it = items.find(x => x.id === id);
-      return it ? (it.id + " — " + it.setTitle + " / " + it.label) : id;
+      const it = allItems.find(x => x.id === id);
+      return it ? (it.id + " — " + it.family + " / " + it.setTitle + " / " + it.label) : id;
     }).join("\n");
     const text = list ? ("GTS customer app icon picks:\n" + list + "\n\n(from the icon picker)") : "No icons hearted yet.";
     try {

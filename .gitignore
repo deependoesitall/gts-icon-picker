@@ -2,3 +2,8 @@
 .DS_Store
 Thumbs.db
 
+
+full/_legacy_live/
+full/_fixed_brand/
+
+_prod_check/

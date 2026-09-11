@@ -3,12 +3,12 @@
     {
       "id": "live",
       "title": "Live now",
-      "blurb": "The three icons already wired \u2014 GTS staff, Sinclair shop, customer."
+      "blurb": "Currently wired in the GTS app — staff Soft3D Admin 09 DarkGreen (zoomed), GTS Fulfill red towboat, customer lime."
     },
     {
       "id": "colorways",
       "title": "Colorways",
-      "blurb": "The original 3D ship Jen liked \u2014 field color only."
+      "blurb": "The original 3D ship Jen liked — field color only."
     },
     {
       "id": "skies",
@@ -23,7 +23,7 @@
     {
       "id": "squares",
       "title": "Filled squares",
-      "blurb": "Badge on a filled square \u2014 better for iPhone homescreen corners."
+      "blurb": "Badge on a filled square — better for iPhone homescreen corners."
     },
     {
       "id": "earlier",
@@ -56,25 +56,25 @@
       "id": "live-01",
       "set": "live",
       "setTitle": "Live now",
-      "label": "GTS staff \u2014 green / gold ring",
+      "label": "GTS staff — Soft3D Admin 09 DarkGreen (zoomed)",
       "file": "admin-icon.png",
       "n": 1,
-      "family": "cargoship"
+      "family": "towboat"
     },
     {
       "id": "live-02",
       "set": "live",
       "setTitle": "Live now",
-      "label": "Sinclair shop \u2014 red / yellow ring",
+      "label": "GTS Fulfill — red GTS towboat",
       "file": "shop-icon.png",
       "n": 2,
-      "family": "cargoship"
+      "family": "towboat"
     },
     {
       "id": "live-03",
       "set": "live",
       "setTitle": "Live now",
-      "label": "Customer \u2014 lime field",
+      "label": "Customer — lime field",
       "file": "customer-icon.png",
       "n": 3,
       "family": "cargoship"
